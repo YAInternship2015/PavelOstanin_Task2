@@ -7,13 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EE0A79F91B8D8CB000556CD3 /* Data.plist in Resources */ = {isa = PBXBuildFile; fileRef = EE0A79F81B8D8CB000556CD3 /* Data.plist */; };
+		EE121BBB1B8C4E45001AB358 /* TTVUserCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EE121BBA1B8C4E45001AB358 /* TTVUserCollectionViewCell.m */; };
+		EE121BC51B8C7DE1001AB358 /* TTVUsersCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE121BC41B8C7DE1001AB358 /* TTVUsersCollectionViewController.m */; };
 		EE7A914E1B7C733A00FCB6D9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EE7A914D1B7C733A00FCB6D9 /* main.m */; };
 		EE7A91511B7C733A00FCB6D9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EE7A91501B7C733A00FCB6D9 /* AppDelegate.m */; };
-		EE7A91541B7C733A00FCB6D9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE7A91531B7C733A00FCB6D9 /* ViewController.m */; };
 		EE7A91571B7C733A00FCB6D9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE7A91551B7C733A00FCB6D9 /* Main.storyboard */; };
 		EE7A91591B7C733A00FCB6D9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE7A91581B7C733A00FCB6D9 /* Images.xcassets */; };
 		EE7A915C1B7C733A00FCB6D9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE7A915A1B7C733A00FCB6D9 /* LaunchScreen.xib */; };
 		EE7A91681B7C733A00FCB6D9 /* TaskTableViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EE7A91671B7C733A00FCB6D9 /* TaskTableViewTests.m */; };
+		EE7A91731B7C739E00FCB6D9 /* TTVUser.m in Sources */ = {isa = PBXBuildFile; fileRef = EE7A91721B7C739E00FCB6D9 /* TTVUser.m */; };
+		EE7A91771B7C773900FCB6D9 /* TTVUserCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EE7A91761B7C773900FCB6D9 /* TTVUserCell.m */; };
+		EE7A917D1B7C83C100FCB6D9 /* TTVUsersTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE7A917C1B7C83C100FCB6D9 /* TTVUsersTableViewController.m */; };
+		EE7A91801B7C988200FCB6D9 /* TTVDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = EE7A917F1B7C988200FCB6D9 /* TTVDataSource.m */; };
+		EE7C663A1B8DF11A0043CADD /* TTVNewItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE7C66391B8DF11A0043CADD /* TTVNewItemViewController.m */; };
+		EE7C663D1B8DF7170043CADD /* TTVValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = EE7C663C1B8DF7170043CADD /* TTVValidator.m */; };
+		EE898DC51B8CAD2600DC434D /* TTVContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE898DC41B8CAD2600DC434D /* TTVContainerViewController.m */; };
+		EECB51841B8F3623006E0D11 /* TTVUserFabric.m in Sources */ = {isa = PBXBuildFile; fileRef = EECB51831B8F3623006E0D11 /* TTVUserFabric.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,19 +37,38 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EE0A79F81B8D8CB000556CD3 /* Data.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Data.plist; sourceTree = "<group>"; };
+		EE121BB91B8C4E45001AB358 /* TTVUserCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTVUserCollectionViewCell.h; sourceTree = "<group>"; };
+		EE121BBA1B8C4E45001AB358 /* TTVUserCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTVUserCollectionViewCell.m; sourceTree = "<group>"; };
+		EE121BC31B8C7DE1001AB358 /* TTVUsersCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTVUsersCollectionViewController.h; sourceTree = "<group>"; };
+		EE121BC41B8C7DE1001AB358 /* TTVUsersCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTVUsersCollectionViewController.m; sourceTree = "<group>"; };
 		EE7A91481B7C733A00FCB6D9 /* TaskTableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TaskTableView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE7A914C1B7C733A00FCB6D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EE7A914D1B7C733A00FCB6D9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		EE7A914F1B7C733A00FCB6D9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		EE7A91501B7C733A00FCB6D9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		EE7A91521B7C733A00FCB6D9 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		EE7A91531B7C733A00FCB6D9 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		EE7A91561B7C733A00FCB6D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EE7A91581B7C733A00FCB6D9 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		EE7A915B1B7C733A00FCB6D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		EE7A91611B7C733A00FCB6D9 /* TaskTableViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TaskTableViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE7A91661B7C733A00FCB6D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EE7A91671B7C733A00FCB6D9 /* TaskTableViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TaskTableViewTests.m; sourceTree = "<group>"; };
+		EE7A91721B7C739E00FCB6D9 /* TTVUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTVUser.m; sourceTree = "<group>"; };
+		EE7A91741B7C73B100FCB6D9 /* TTVUser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTVUser.h; sourceTree = "<group>"; };
+		EE7A91751B7C773900FCB6D9 /* TTVUserCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTVUserCell.h; sourceTree = "<group>"; };
+		EE7A91761B7C773900FCB6D9 /* TTVUserCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTVUserCell.m; sourceTree = "<group>"; };
+		EE7A917B1B7C83C100FCB6D9 /* TTVUsersTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTVUsersTableViewController.h; sourceTree = "<group>"; };
+		EE7A917C1B7C83C100FCB6D9 /* TTVUsersTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTVUsersTableViewController.m; sourceTree = "<group>"; };
+		EE7A917E1B7C988200FCB6D9 /* TTVDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTVDataSource.h; sourceTree = "<group>"; };
+		EE7A917F1B7C988200FCB6D9 /* TTVDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTVDataSource.m; sourceTree = "<group>"; };
+		EE7C66381B8DF11A0043CADD /* TTVNewItemViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTVNewItemViewController.h; sourceTree = "<group>"; };
+		EE7C66391B8DF11A0043CADD /* TTVNewItemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTVNewItemViewController.m; sourceTree = "<group>"; };
+		EE7C663B1B8DF7170043CADD /* TTVValidator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTVValidator.h; sourceTree = "<group>"; };
+		EE7C663C1B8DF7170043CADD /* TTVValidator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTVValidator.m; sourceTree = "<group>"; };
+		EE898DC31B8CAD2600DC434D /* TTVContainerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTVContainerViewController.h; sourceTree = "<group>"; };
+		EE898DC41B8CAD2600DC434D /* TTVContainerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTVContainerViewController.m; sourceTree = "<group>"; };
+		EECB51821B8F3623006E0D11 /* TTVUserFabric.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTVUserFabric.h; sourceTree = "<group>"; };
+		EECB51831B8F3623006E0D11 /* TTVUserFabric.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTVUserFabric.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +89,78 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EE05B5D81B85E07B00B6528A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EE898DC31B8CAD2600DC434D /* TTVContainerViewController.h */,
+				EE898DC41B8CAD2600DC434D /* TTVContainerViewController.m */,
+				EE7A917B1B7C83C100FCB6D9 /* TTVUsersTableViewController.h */,
+				EE7A917C1B7C83C100FCB6D9 /* TTVUsersTableViewController.m */,
+				EE121BC31B8C7DE1001AB358 /* TTVUsersCollectionViewController.h */,
+				EE121BC41B8C7DE1001AB358 /* TTVUsersCollectionViewController.m */,
+				EE7C66381B8DF11A0043CADD /* TTVNewItemViewController.h */,
+				EE7C66391B8DF11A0043CADD /* TTVNewItemViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		EE05B5DA1B85E0CF00B6528A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				EE7A91581B7C733A00FCB6D9 /* Images.xcassets */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		EE05B5DB1B85E6D100B6528A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				EE7A91741B7C73B100FCB6D9 /* TTVUser.h */,
+				EE7A91721B7C739E00FCB6D9 /* TTVUser.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		EE05B5DC1B85E6DB00B6528A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EE7A91751B7C773900FCB6D9 /* TTVUserCell.h */,
+				EE7A91761B7C773900FCB6D9 /* TTVUserCell.m */,
+				EE121BB91B8C4E45001AB358 /* TTVUserCollectionViewCell.h */,
+				EE121BBA1B8C4E45001AB358 /* TTVUserCollectionViewCell.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		EE05B5DD1B85E71600B6528A /* Datasource */ = {
+			isa = PBXGroup;
+			children = (
+				EE7A917E1B7C988200FCB6D9 /* TTVDataSource.h */,
+				EE7A917F1B7C988200FCB6D9 /* TTVDataSource.m */,
+				EE0A79F81B8D8CB000556CD3 /* Data.plist */,
+			);
+			name = Datasource;
+			sourceTree = "<group>";
+		};
+		EE0925E61B942C06002CFF58 /* MVC */ = {
+			isa = PBXGroup;
+			children = (
+				EE05B5DB1B85E6D100B6528A /* Models */,
+				EE05B5DC1B85E6DB00B6528A /* View */,
+				EE05B5D81B85E07B00B6528A /* Controller */,
+			);
+			name = MVC;
+			sourceTree = "<group>";
+		};
+		EE0A32DF1B99E04200CA8E41 /* Validator */ = {
+			isa = PBXGroup;
+			children = (
+				EE7C663B1B8DF7170043CADD /* TTVValidator.h */,
+				EE7C663C1B8DF7170043CADD /* TTVValidator.m */,
+			);
+			name = Validator;
+			sourceTree = "<group>";
+		};
 		EE7A913F1B7C733A00FCB6D9 = {
 			isa = PBXGroup;
 			children = (
@@ -83,12 +184,15 @@
 			children = (
 				EE7A914F1B7C733A00FCB6D9 /* AppDelegate.h */,
 				EE7A91501B7C733A00FCB6D9 /* AppDelegate.m */,
-				EE7A91521B7C733A00FCB6D9 /* ViewController.h */,
-				EE7A91531B7C733A00FCB6D9 /* ViewController.m */,
+				EE0A32DF1B99E04200CA8E41 /* Validator */,
+				EE0925E61B942C06002CFF58 /* MVC */,
+				EE05B5DD1B85E71600B6528A /* Datasource */,
+				EE05B5DA1B85E0CF00B6528A /* Resources */,
 				EE7A91551B7C733A00FCB6D9 /* Main.storyboard */,
-				EE7A91581B7C733A00FCB6D9 /* Images.xcassets */,
 				EE7A915A1B7C733A00FCB6D9 /* LaunchScreen.xib */,
 				EE7A914B1B7C733A00FCB6D9 /* Supporting Files */,
+				EECB51821B8F3623006E0D11 /* TTVUserFabric.h */,
+				EECB51831B8F3623006E0D11 /* TTVUserFabric.m */,
 			);
 			path = TaskTableView;
 			sourceTree = "<group>";
@@ -163,6 +267,7 @@
 		EE7A91401B7C733A00FCB6D9 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = TTV;
 				LastUpgradeCheck = 0640;
 				ORGANIZATIONNAME = "Pavel Ostanin";
 				TargetAttributes = {
@@ -201,6 +306,7 @@
 			files = (
 				EE7A91571B7C733A00FCB6D9 /* Main.storyboard in Resources */,
 				EE7A915C1B7C733A00FCB6D9 /* LaunchScreen.xib in Resources */,
+				EE0A79F91B8D8CB000556CD3 /* Data.plist in Resources */,
 				EE7A91591B7C733A00FCB6D9 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -219,8 +325,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EE7A91541B7C733A00FCB6D9 /* ViewController.m in Sources */,
+				EE898DC51B8CAD2600DC434D /* TTVContainerViewController.m in Sources */,
+				EE121BC51B8C7DE1001AB358 /* TTVUsersCollectionViewController.m in Sources */,
+				EE7A917D1B7C83C100FCB6D9 /* TTVUsersTableViewController.m in Sources */,
+				EE121BBB1B8C4E45001AB358 /* TTVUserCollectionViewCell.m in Sources */,
 				EE7A91511B7C733A00FCB6D9 /* AppDelegate.m in Sources */,
+				EE7A91771B7C773900FCB6D9 /* TTVUserCell.m in Sources */,
+				EECB51841B8F3623006E0D11 /* TTVUserFabric.m in Sources */,
+				EE7A91801B7C988200FCB6D9 /* TTVDataSource.m in Sources */,
+				EE7C663A1B8DF11A0043CADD /* TTVNewItemViewController.m in Sources */,
+				EE7A91731B7C739E00FCB6D9 /* TTVUser.m in Sources */,
+				EE7C663D1B8DF7170043CADD /* TTVValidator.m in Sources */,
 				EE7A914E1B7C733A00FCB6D9 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -418,6 +533,7 @@
 				EE7A916D1B7C733A00FCB6D9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EE7A916E1B7C733A00FCB6D9 /* Build configuration list for PBXNativeTarget "TaskTableViewTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +542,7 @@
 				EE7A91701B7C733A00FCB6D9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

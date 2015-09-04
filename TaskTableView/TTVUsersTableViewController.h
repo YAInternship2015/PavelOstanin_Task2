@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  TTVUsersTableViewController.h
 //  TaskTableView
 //
 //  Created by Pavel Ostanin on 13/08/2015.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface TTVUsersTableViewController : UITableViewController
 
 @end
-
