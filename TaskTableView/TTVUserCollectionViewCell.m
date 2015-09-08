@@ -10,6 +10,7 @@
 
 @interface TTVUserCollectionViewCell ()
 
+#warning (nonatomic, weak)
 @property (weak, nonatomic) IBOutlet UIImageView *userImageView;
 
 @end

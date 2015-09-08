@@ -10,6 +10,8 @@
 
 @interface TTVDataSource()
 
+#warning (nonatomic, strong)
+#warning также этот массив должен хранить модели, а не NSDictionary
 @property (strong, nonatomic) NSMutableArray *data;
 
 @end
@@ -19,9 +21,11 @@
 - (instancetype)initWithDelegate:(id <ModelsDataSourceDelegate>)delegate {
     self = [super init];
     if (self) {
+#warning следующую логику вынесите в отдельный метод
         NSString *path = [self pathToDocumentDirectory];
         NSFileManager *fileManager = [NSFileManager defaultManager];
         
+#warning не нужен пробел после :
         if (![fileManager fileExistsAtPath: path]) {
             NSString *bundlePath = [[NSBundle mainBundle] pathForResource:@"Data" ofType:@"plist"];
             _data = [NSMutableArray arrayWithContentsOfFile:bundlePath];
@@ -31,7 +35,7 @@
             _data = [NSMutableArray arrayWithContentsOfFile:path];
         }
     }
-    
+#warning имя нотификейшна только в этом классе повторяется трижды. Его следует вынести в константы в отдельный файл вроде TTVNotifications.h
     [[NSNotificationCenter defaultCenter] addObserver:self
                                              selector:@selector(receiveTestNotification:)
                                                  name:@"DataFileContentDidChange"
@@ -52,6 +56,7 @@
     return self.data[index];
 }
 
+#warning этот метод лучше вынести в категорию к NSBundle или NSFileManager
 - (NSString *)pathToDocumentDirectory {
     NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
     NSString *documentsDirectory = [paths objectAtIndex:0];
@@ -82,6 +87,7 @@
     else {
         data = [[NSMutableArray alloc] init];
     }
+#warning преобразование модели в NSDictionary должно быть в категории к модели, в методе типа -dictionaryRepresentation
     [data addObject:@{@"userImage" : @"images", @"userName" : user.userName}];
     [data writeToFile:path atomically:YES];
     [[NSNotificationCenter defaultCenter] postNotificationName:@"DataFileContentDidChange" object:self];

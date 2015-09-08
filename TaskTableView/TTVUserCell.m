@@ -10,6 +10,7 @@
 
 @interface TTVUserCell ()
 
+#warning (nonatomic, weak)
 @property (weak, nonatomic) IBOutlet UIImageView *userImageView;
 @property (weak, nonatomic) IBOutlet UILabel *userNameLabel;
 

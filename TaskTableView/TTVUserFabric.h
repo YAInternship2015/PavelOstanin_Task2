@@ -9,8 +9,10 @@
 #import <Foundation/Foundation.h>
 #import "TTVUser.h"
 
+#warning правильнее TTVUserFactory
 @interface TTVUserFabric : NSObject
 
+#warning опечатки в имени метода
 + (TTVUser *)creatUserWhithName:(NSString *)userName;
 
 @end

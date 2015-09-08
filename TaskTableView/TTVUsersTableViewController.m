@@ -14,6 +14,7 @@
 
 @interface TTVUsersTableViewController () <ModelsDataSourceDelegate>
 
+#warning (nonatomic, strong)
 @property (strong, nonatomic) TTVDataSource *dataSource;
 
 @end
@@ -35,6 +36,7 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     static NSString *simpleTableIdentifer = @"Cell";
     TTVUserCell *cell = [self.tableView dequeueReusableCellWithIdentifier:simpleTableIdentifer];
+#warning довольно странное решение. Датасорс должен возвращать модель, а не NSDictionary
     [cell setupWithUser:[[TTVUser alloc] initWithURL:[self.dataSource itemAtIndex:indexPath.row][@"userImage"]
                                                 name:[self.dataSource itemAtIndex:indexPath.row][@"userName"]]];
     return cell;

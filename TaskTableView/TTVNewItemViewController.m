@@ -19,6 +19,7 @@
 
 @implementation TTVNewItemViewController
 
+#warning этот метод можно удалить
 - (void)viewDidLoad {
     [super viewDidLoad];
 }

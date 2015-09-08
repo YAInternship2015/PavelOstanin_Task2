@@ -16,6 +16,7 @@
 @property TTVUsersCollectionViewController *collectionViewController;
 @property TTVUsersTableViewController *tableViewController;
 
+#warning методы можно не указывать в секции @interface
 - (IBAction)changeController:(id)sender;
 
 @end
@@ -24,12 +25,15 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+#warning идентификаторы контроллеров надо вынести в константы в самих контроллерах
     self.collectionViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"COLLECTION_CONTROLLER"];
     self.tableViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"TABLE_CONTROLLER"];
+#warning логику добавление child контроллера лучше вынести в отдельный метод
     [self addChildViewController:self.tableViewController];
     self.tableViewController.view.frame = self.view.frame;
     [self.view addSubview:self.tableViewController.view];
     [self.tableViewController didMoveToParentViewController:self];
+#warning это лучше задавать в сториборде
     self.navigationItem.leftBarButtonItem.title = @"Collection View";
 }
 
@@ -40,6 +44,8 @@
     toController.view.frame = CGRectMake(0, 0, self.view.frame.size.width, 0);
     CGRect endFrame = CGRectMake(0, self.view.frame.size.height, self.view.frame.size.width, 0);
     
+#warning здесь проблемы с форматированием - после : не нужны пробелы
+#warning время анимации надо объявить константой в прямо в этом методе
     [self transitionFromViewController: fromController toViewController: toController
                               duration: 0.25
                                options:0
@@ -59,6 +65,7 @@
 
 - (IBAction)changeController:(id)sender {
     NSString *str = [NSString stringWithFormat:@"%@",[self.childViewControllers[0] class]];
+#warning не лучшее решение. лучше хранить BOOL свойство с флажком, какой контроллер сейчас видимый
     if ([str isEqualToString:@"TTVUsersTableViewController"]) {
         self.navigationItem.leftBarButtonItem.title = @"Table View";
         [self cycleFromViewController:self.tableViewController
@@ -72,7 +79,7 @@
 }
 
 #pragma mark - unwind action
-
+#warning пустые методы не нужно оставлять в коде
 - (IBAction)unwindToContainerController:(UIStoryboardSegue*)sender {
 }
 

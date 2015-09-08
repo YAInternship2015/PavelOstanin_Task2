@@ -9,8 +9,9 @@
 #import <Foundation/Foundation.h>
 #import "TTVUser.h"
 
+#warning имена протоколов также должны иметь префикс приложения
 @protocol ModelsDataSourceDelegate <NSObject>
-
+#warning пробел после (void) не нужен
 - (void) dataWasChanged;
 
 @end
@@ -22,6 +23,7 @@
 - (instancetype)initWithDelegate:(id <ModelsDataSourceDelegate>)delegate;
 - (NSInteger)numberOfItems;
 - (NSDictionary *)itemAtIndex:(NSInteger)index;
+#warning пробед не нужен после (void)
 - (void) saveUser:(TTVUser *)user;
 
 @end

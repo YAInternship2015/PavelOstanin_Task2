@@ -11,6 +11,9 @@
 
 @interface TTVUser : NSObject
 
+#warning по нашим гайдлайнам правильно писать (nonatomic, strong)
+#warning незачем показывать в *.h эти свойства с readwrite доступом. В *.h файле достаточно показать readonly доступ, а в *.m - readwrite
+#warning и незачем в модели хранить UIImageView, лучше UIImage
 @property (strong, nonatomic) UIImageView *userImage;
 @property (strong, nonatomic) NSString *userName;
 
